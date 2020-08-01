@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="foody.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+       <title></title>
+    		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+    
+    
+    
+</head>
+<body >
+    <form id="form1" runat="server">
+    
+         		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" style="background-color:#170340">
+				<div class="custom-menu" >
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div >
+	  		<h1><a href="index.html" class="logo" style="background-color:#3a08a0">Restaurant</a></h1>
+        <ul class="list-unstyled components mb-5 ">
+          <li class="active">
+            <a href="home.aspx"><span class="fa fa-home mr-3"></span> Homepage</a>
+          </li>
+          <li>
+              <a href="resmaker.aspx"><span class="fa fa-user mr-3"></span> Add a Reservation</a>
+          </li>
+          <li>
+            <a href="manager.aspx"><span class="fa fa-sticky-note mr-3"></span>Table Manager</a>
+          </li>
+        
+      
+             <li>
+             <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click"><span class="fa fa-sticky-note mr-3"></span>manage</asp:LinkButton>
+
+
+         </li>
+
+
+               <li>
+             <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click"><span class="fa fa-book mr-3 "></span>Drinks</asp:LinkButton>
+
+
+         </li>   <li>
+             <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" ><span class="fa fa-book mr-3 "></span>Food</asp:LinkButton>
+
+
+         </li>
+
+
+
+
+
+               <li>
+             <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click1"><span class="fa fa-book mr-3 "></span>Admin Login</asp:LinkButton>
+
+
+         </li>
+            
+               <li>
+             <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" ><span class="fa fa-book mr-3 "></span>logout</asp:LinkButton>
+
+
+         </li>
+         
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+    
+
+
+      </div>
+
+  
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+        <!-- Page Content  -->
+ 
+		
+
+ 
+
+        <!-- Page Content  -->
+ 
+
+    </form>
+</body>
+</html>
