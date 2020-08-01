@@ -1,5 +1,5 @@
 # FMS
- Restorant management system,Created using ASP.NET with C# & Mysql Database
+ restaurant management system,Created using ASP.NET with C# & Mysql Database
 </br>
 <img src="1.gif"></img>
 <img src="2.gif"></img>
